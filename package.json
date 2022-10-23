@@ -4,7 +4,7 @@
   "description": "",
   "main": "jongbot.js",
   "scripts": {
-    "start": "node jongbot.js",
+    "start":"node jongbot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rysnanto",
