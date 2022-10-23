@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const PORT = process.env.PORT || '8080'
+const port = process.env.PORT || '3000';
 const scrt = require("./routes/wa");
 const secret = require("./controllers/waController");
 
@@ -16,4 +16,4 @@ app.get('/', function (req, res)
     res.render('index.html');
 });
 
-app.set("port", PORT);
+app.listen(port, () => console.log(`aplikasi running ${port}`));
