@@ -10,7 +10,9 @@ const client = new Client({
     args: ["--no-sandbox"],
   },
 });
-
+const browser = await puppeteer.launch({
+  args: ['--no-sandbox', '--disable-setuid-sandbox'],
+});
 client.on("qr", (qr) => {
   qrcode.generate(qr, { small: true });
   // console.log('QR RECEIVED', qr);
