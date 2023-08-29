@@ -1,13 +1,12 @@
-2023/05/18-19:37:25.151 1548 Reusing MANIFEST D:\jongbot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/05/18-19:37:25.151 1548 Recovering log #21
-2023/05/18-19:37:25.727 1548 Reusing old log D:\jongbot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000021.log 
-2023/05/18-19:37:48.357 5f78 Level-0 table #26: started
-2023/05/18-19:37:48.400 5f78 Level-0 table #26: 1382697 bytes OK
-2023/05/18-19:37:48.402 5f78 Delete type=0 #21
-2023/05/18-19:37:48.625 1548 Compacting 1@1 + 1@2 files
-2023/05/18-19:37:48.777 1548 Generated table #27@1: 55694 keys, 2228290 bytes
-2023/05/18-19:37:48.787 1548 Generated table #28@1: 3267 keys, 58325 bytes
-2023/05/18-19:37:48.787 1548 Compacted 1@1 + 1@2 files => 2286615 bytes
-2023/05/18-19:37:48.788 1548 compacted to: files[ 0 0 2 0 0 0 0 ]
-2023/05/18-19:37:48.788 1548 Delete type=2 #23
-2023/05/18-19:37:48.788 1548 Delete type=2 #26
+2023/08/29-17:59:07.280 42a4 Reusing MANIFEST D:\jongbot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/08/29-17:59:07.282 42a4 Recovering log #2431
+2023/08/29-17:59:07.472 42a4 Reusing old log D:\jongbot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/002431.log 
+2023/08/29-18:01:57.160 1f88 Level-0 table #2436: started
+2023/08/29-18:01:57.228 1f88 Level-0 table #2436: 1105722 bytes OK
+2023/08/29-18:01:57.231 1f88 Delete type=0 #2431
+2023/08/29-18:01:57.296 4b2c Compacting 1@1 + 1@2 files
+2023/08/29-18:01:57.544 4b2c Generated table #2437@1: 41551 keys, 2082458 bytes
+2023/08/29-18:01:57.544 4b2c Compacted 1@1 + 1@2 files => 2082458 bytes
+2023/08/29-18:01:57.545 4b2c compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/08/29-18:01:57.546 4b2c Delete type=2 #2433
+2023/08/29-18:01:57.546 4b2c Delete type=2 #2436

@@ -44,16 +44,17 @@ client.on("message_create", async (message) => {
   } else if (message.body === ".rules") {
     const rules =
       "Ini adalah rules grup:\n\n" +
-      "1. Tidak boleh ada bulying\n" +
+      "1. jangan membuly (atmin nub) \n" +
       "2. Share link wajib yang bermanfaat \n" +
-      "3. Menggunakan tag #izinAdmin \n";
+      "3. War jam 8 malam (wajib setiap malming) / setiap hari \n"+
+      "4. webiste atmin : www.jongnesia.com"; 
     message.reply(rules);
   } else if (message.body === ".menu") {
     const menu =
       "Haii_< , Mau cari apa nih?\n\n" +
       "1. .artikel \n" +
       "2. .artikel {query} \n" +
-      "3. .baca {url Artikel} \n" +
+      "3. .baca {url Artikel jongnesia.com} \n" +
       "4. .rules \n";
     message.reply(menu);
   }
@@ -88,7 +89,6 @@ client.on("message", async (message) => {
   }
 });
 
-client.initialize();
 
 const secret = async (req, res) => {
   let nohp = req.query.nohp;
@@ -149,5 +149,41 @@ async function scrapeRss() {
 
   return articles;
 }
+
+client.on('group_join', async (notification) => {
+  const chat = await notification.getChat();
+
+  const groupName = await chat.name;
+
+
+  const welcomeMessage = `Selamat datang di grup ${groupName}, Member Baru! Kenalin admin ganteng @Risnanto (6282136600468) 🎉`;
+
+  chat.sendMessage(welcomeMessage);
+  const rules =
+    "Ini adalah rules grup:\n\n" +
+    "1. jangan membuly (atmin) \n" +
+    "2. Ketemu nick (Pemula , Blast_ID) lock aja"+
+    "3. Share link wajib yang bermanfaat \n" +
+    "4. War jam 8 malam (wajib setiap malming) / setiap hari \n"+
+    "5. webiste atmin : www.jongnesia.com"; 
+
+  await chat.sendMessage(rules);
+
+  const intro =
+  "Yuk intro biar saling kenal \n\n"+
+  "Nama : \n\n"+
+  "Umur : \n\n"+
+  "Asal : \n\n"+
+  "Nick Game : \n\n"+
+  "Main berapa jari: \n\n";
+  await chat.sendMessage(intro);
+});
+
+
+
+
+
+
+client.initialize();
 
 module.exports = secret;

@@ -1,4 +1,2 @@
-[0518/193847.523:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'.", source:  (0)
-[0518/193847.524:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.", source:  (0)
-[0518/193859.732:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
-[0518/193900.760:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
+[0829/180640.162:INFO:CONSOLE(30)] "Error: Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.", source: https://web.whatsapp.com/vendor1~app.a91035d81a749b3d5627.js (30)
+[0829/180640.500:INFO:CONSOLE(30)] "Error: Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.", source: https://web.whatsapp.com/vendor1~app.a91035d81a749b3d5627.js (30)
