@@ -7,7 +7,7 @@ const cheerio = require("cheerio");
 const client = new Client({
   authStrategy: new LocalAuth(),
   puppeteer: {
-   args: ['--no-sandbox', '--disable-setuid-sandbox'],
+   args: ['--no-sandbox'],
   },
 });
 
