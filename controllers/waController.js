@@ -7,12 +7,10 @@ const cheerio = require("cheerio");
 const client = new Client({
   authStrategy: new LocalAuth(),
   puppeteer: {
-    args: ["--no-sandbox"],
+   args: ['--no-sandbox', '--disable-setuid-sandbox'],
   },
 });
-const browser = await puppeteer.launch({
-  args: ['--no-sandbox', '--disable-setuid-sandbox'],
-});
+
 client.on("qr", (qr) => {
   qrcode.generate(qr, { small: true });
   // console.log('QR RECEIVED', qr);
