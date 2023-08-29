@@ -7,7 +7,7 @@ const cheerio = require("cheerio");
 const client = new Client({
   authStrategy: new LocalAuth(),
   puppeteer: {
-    args: ["--no-sandbox"],
+   args: ['--no-sandbox'],
   },
 });
 
@@ -19,6 +19,7 @@ client.on("qr", (qr) => {
 client.on("ready", () => {
   console.log("Sudah Siap");
 });
+client.initialize();
 
 client.on("message_create", async (message) => {
   if (message.body.startsWith(".artikel")) {
@@ -184,6 +185,6 @@ client.on('group_join', async (notification) => {
 
 
 
-client.initialize();
+
 
 module.exports = secret;
